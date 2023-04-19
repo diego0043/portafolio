@@ -1,3 +1,7 @@
+:root {
+  --color-primary: #784cfb;
+}
+
 body {
   background-color: #fff;
 }
@@ -46,10 +50,6 @@ body {
   backdrop-filter: blur(4px);
 }
 
-.home {
-  margin-top: 100px;
-}
-
 .container-animation {
   display: block;
   margin-left: auto;
@@ -60,10 +60,43 @@ body {
 
 .text-p-home {
   font-weight: 500;
-  color: #2c2847;
+  color: gray;
   text-align: justify;
 }
 
+.btn-home-description {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 7px 15px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.icon-brand {
+  color: var(--color-primary);
+  margin-top: -3px;
+}
+
+.btn-navbar-contact {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 4px 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  width: 100px;
+}
+
+.btn-navbar-contact:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+
+}
 @media only screen and (max-width: 768px) {
   .container-text-home {
     display: block;
@@ -73,30 +106,36 @@ body {
     margin-right: auto;
   }
 
-  .img-home{
+  .img-home {
     display: block;
-    margin-top: -8%;
-    width: 300px;
+    margin-top: 5%;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .home {
+    margin-top: 80px;
+  }
 }
 @media only screen and (min-width: 769px) {
   .container-text-home {
     display: block;
     width: 600px;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: auto;
   }
 
-  .img-home{
+  .img-home {
     display: block;
     margin-top: -10%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 300px;
+    margin-left: -50px;
+    width: 550px;
+    border: none;
+  }
+
+  .home {
+    margin-top: 100px;
   }
 }

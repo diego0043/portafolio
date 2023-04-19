@@ -24,6 +24,13 @@ export const HomeContainer = () => {
               looking for new challenges.
             </p>
           </div>
+          <div className="row">
+            <div className="col-4">
+            <button className="btn-home-description shadow"> 
+              DOWNLOAD CV
+            </button>
+            </div>
+          </div>
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 animate__animated animate__fadeInRight container-animation">
           {/* <HomeAnimation /> */}
