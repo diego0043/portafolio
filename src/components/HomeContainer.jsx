@@ -7,18 +7,12 @@ export const HomeContainer = () => {
     <>
       <div className="row container-fluid home">
         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 animate__animated animate__fadeInLeft container-fluid container-text-home">
-          <div className="row">
-            <span>Wellcome! I´M</span>
-          </div>
           <div className="row mt-2">
-            <h1>DIEGO VALENCIA</h1>
-          </div>
-          <div className="row mt-2">
-            <span>Systems engineer & Web developer</span>
+            <h1 className="text-title-home">DIEGO VALENCIA</h1>
           </div>
           <div className="row mt-3 text-p-home">
             <p>
-              I am a systems engineer and web developer, I have experience in
+              Hello, I´ am a systems engineer and web developer, I have experience in
               front-end development, I am passionate about technology and
               programming, I am always learning new things and I am always
               looking for new challenges.

@@ -6,13 +6,6 @@ body {
   background-color: #fff;
 }
 
-.nav-item-widh {
-  display: flex;
-  align-items: center;
-  width: 80px;
-  text-align: left;
-}
-
 .navbar-brand-movil {
   width: 80%;
   text-align: center;
@@ -31,9 +24,14 @@ body {
 .btn-home-navbar {
   border: none;
   background-color: transparent;
-  color: #2c2847;
+  color: var(--color-primary);
   font-weight: bold;
   font-size: 20px;
+}
+
+.btn-home-navbar:hover {
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 .navbar-toggler:focus {
@@ -59,44 +57,18 @@ body {
 }
 
 .text-p-home {
-  font-weight: 500;
   color: gray;
   text-align: justify;
 }
 
-.btn-home-description {
-  background-color: var(--color-primary);
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  padding: 7px 15px;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 10px;
-  width: 200px;
-}
+
 
 .icon-brand {
   color: var(--color-primary);
   margin-top: -3px;
 }
 
-.btn-navbar-contact {
-  background-color: var(--color-primary);
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  padding: 4px 20px;
-  font-weight: bold;
-  margin-top: 5px;
-  width: 100px;
-}
 
-.btn-navbar-contact:hover {
-  background-color: var(--color-primary);
-  color: #fff;
-
-}
 @media only screen and (max-width: 768px) {
   .container-text-home {
     display: block;
@@ -115,8 +87,59 @@ body {
   }
 
   .home {
-    margin-top: 80px;
+    margin-top: 50px;
   }
+
+  .text-title-home{
+    color: #2c2847;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+  }
+
+  .btn-home-description {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 170px;
+  }
+
+  .btn-navbar-contact {
+    font-weight: bold;
+    font-size: 17px;
+    align-items: center;
+    width: 80px;
+    text-align: left;
+    margin-left: 20px;
+    color: var(--color-primary);
+    width: 100%;
+  }
+  
+  .btn-navbar-contact:hover {
+    width: 100%;
+    text-align: left;
+    color: var(--color-primary);
+  }
+
+  .nav-item-widh {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    margin-left: 20px;
+    color: var(--color-primary);
+    width: 100%;
+  }
+
+  .nav-link {
+    color: var(--color-primary);
+  }
+  
 }
 @media only screen and (min-width: 769px) {
   .container-text-home {
@@ -138,4 +161,51 @@ body {
   .home {
     margin-top: 100px;
   }
+
+  .text-title-home{
+    color: #2c2847;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+  }
+
+  .btn-home-description {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 200px;
+  }
+
+  .btn-navbar-contact {
+    background-color: var(--color-primary);
+    color: #fff !important;
+    border: none;
+    border-radius: 25px;
+    padding: 4px 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    width: 100px;
+  }
+  
+  .btn-navbar-contact:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+
+  .nav-item-widh {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    text-align: left;
+  }
+
+  .nav-link {
+    color: black;
+  }
+  
 }
