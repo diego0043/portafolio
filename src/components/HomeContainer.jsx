@@ -5,7 +5,7 @@ import cv from "../cv/currículo-diego.valencia.pdf"
 export const HomeContainer = () => {
   return (
     <>
-      <div className="row container-fluid home">
+      <div className="row container-fluid home" data-aos="fade-up" data-aos-duration="500">
         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 animate__animated animate__fadeInLeft container-fluid container-text-home">
           <div className="row mt-2">
             <h1 className="text-title-home">DIEGO VALENCIA</h1>

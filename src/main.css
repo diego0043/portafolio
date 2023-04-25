@@ -89,22 +89,6 @@ body {
   height: 90vh;
 }
 
-.container-cards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-.card-service{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 65%;
-  height: 300px;
-  border-radius: 10px;
-  border: 1px solid #c0c0c2;
-}
 
 @media only screen and (max-width: 768px) {
   .container-text-home {
@@ -177,6 +161,60 @@ body {
     margin-top: 40px;
     height: 90vh;
   } 
+
+  .container-services{
+    margin-top: 40px;
+  }
+
+  .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 30px;
+  }
+
+  .card-service{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #784cfb;
+    color: #fff;
+  }
+
+  .card-1, .card-2, .card-3{
+    margin-top: 0%;
+  }
+
+  .icon-card{
+    margin-top: 10%;
+  }
+
+  .title-card{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
+
+  .paragraph-card{
+    text-align: center;
+  }
+
+  .title-services{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .paragraph-services{
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  
   
 }
 @media only screen and (min-width: 769px) {
@@ -246,5 +284,76 @@ body {
   .nav-link {
     color: black;
   }
+
+  .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .card-service{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: 300px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    color: black;
+  }
+
+  .icon-card{
+    color: #784cfb;
+    transition: all 0.5s ease-in-out;
+    margin-top: 10%;
+
+  }
+
+  .card-service:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: #784cfb;
+    box-shadow: rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+
+  .card-service:hover .icon-card{
+    transition: all 0.5s ease-in-out;
+
+    color: white;
+  }
+
+  .card-1{
+    margin-left: 51%;
+  }
+  .card-3{
+    margin-left: -15%;
+  }
+
+  .card-1, .card-2, .card-3{
+    margin-top: 5%;
+  }
+
+  .title-card{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
+
+  .paragraph-card{
+    text-align: center;
+  }
+
+  .title-services{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .paragraph-services{
+    text-align: center;
+    margin-top: 1%;
+  }
+
   
 }
