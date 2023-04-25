@@ -1,5 +1,6 @@
 import { HomeContainer } from "./components/HomeContainer";
 import { Navbar } from "./components/Navbar";
+import { Projects } from "./components/Projects";
 import { ServiceContainer } from "./components/ServiceContainer";
 
 export const App = () => {
@@ -8,6 +9,7 @@ export const App = () => {
       <Navbar />
       <HomeContainer /> 
       <ServiceContainer />
+      <Projects />
     </>
   );
 };
