@@ -60,7 +60,6 @@
     .image-carousel{
         display: block;
         width: 500px;
-        height: 100%;
         margin-left: auto;
         margin-right: auto;
         object-fit: cover;
@@ -137,7 +136,7 @@
     }
 
     .carousel-item:hover .image-carousel{
-        opacity: 0.5;
+        opacity: 0.4;
         transition: all 0.3s ease-in-out;
     }
 }
