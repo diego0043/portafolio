@@ -214,10 +214,28 @@ body {
     margin-top: 5%;
   }
 
-  
+  .container-projects{
+    margin-top: 50px;
+    height: 90vh;
+  }
   
 }
 @media only screen and (min-width: 769px) {
+  .container-projects{
+    margin-top: 50px;
+    height: 90vh;
+  }
+
+  .container-card{
+    display:block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #c0c0c2;
+  }
+
+
+
+
   .container-text-home {
     display: block;
     width: 600px;

@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 import "./main.css";
-import "../src/assets/Projects.css"
 import 'animate.css';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
