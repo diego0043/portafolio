@@ -61,8 +61,6 @@ body {
   text-align: justify;
 }
 
-
-
 .icon-brand {
   color: var(--color-primary);
   margin-top: -3px;
@@ -85,10 +83,10 @@ body {
   background: #8a8989;
 }
 
-.container-services{
+.container-services {
+  margin-top: 40px;
   height: 90vh;
 }
-
 
 @media only screen and (max-width: 768px) {
   .container-text-home {
@@ -107,7 +105,7 @@ body {
     margin-right: auto;
   }
 
-  .text-title-home{
+  .text-title-home {
     color: #2c2847;
     font-weight: bold;
     font-size: 50px;
@@ -136,7 +134,7 @@ body {
     color: var(--color-primary);
     width: 100%;
   }
-  
+
   .btn-navbar-contact:hover {
     width: 100%;
     text-align: left;
@@ -160,13 +158,13 @@ body {
   .home {
     margin-top: 40px;
     height: 90vh;
-  } 
+  }
 
-  .container-services{
+  .container-services {
     margin-top: 40px;
   }
 
-  .container-cards{
+  .container-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -174,7 +172,7 @@ body {
     gap: 30px;
   }
 
-  .card-service{
+  .card-service {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -185,37 +183,38 @@ body {
     color: #fff;
   }
 
-  .card-1, .card-2, .card-3{
+  .card-1,
+  .card-2,
+  .card-3 {
     margin-top: 0%;
   }
 
-  .icon-card{
+  .icon-card {
     margin-top: 10%;
   }
 
-  .title-card{
+  .title-card {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 8%;
   }
 
-  .paragraph-card{
+  .paragraph-card {
     text-align: center;
   }
 
-  .title-services{
+  .title-services {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
   }
 
-  .paragraph-services{
+  .paragraph-services {
     text-align: center;
     margin-top: 5%;
   }
 
-
-  .container-projects{
+  .container-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -226,15 +225,15 @@ body {
     margin-bottom: 40px;
   }
 
-  .container-card{
-    display:block;
+  .container-card {
+    display: block;
     width: 420px;
     height: 180px;
     box-shadow: 0px 0px 2px 0px #cacace;
     border-radius: 1rem;
   }
 
-  .title{
+  .title {
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
@@ -242,7 +241,7 @@ body {
     color: rgb(56, 56, 56);
   }
 
-  .description{
+  .description {
     font-size: 14px;
     margin-top: 10px;
     margin-left: 5px;
@@ -251,7 +250,7 @@ body {
     color: gray;
   }
 
-  .technologies{
+  .technologies {
     font-size: 14px;
     margin-top: 10px;
     margin-left: 5px;
@@ -261,15 +260,15 @@ body {
     overflow: hidden;
   }
 
-  .container-buttons{
+  .container-buttons {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     width: 100px;
     margin-left: -10px;
   }
-  
-  .btn-card{
+
+  .btn-card {
     color: rgb(97, 91, 91);
     border: none;
     border-radius: 25px;
@@ -282,19 +281,100 @@ body {
     transform: all 0.3s ease-in-out;
   }
 
-  .btn-card .icon-card{
+  .btn-card .icon-card {
     color: rgb(97, 91, 91);
     margin-left: -6px;
   }
 
-  .btn-card:hover .icon-card{
+  .btn-card:hover .icon-card {
     color: #000000;
     transform: all 0.3s ease-in-out;
   }
-  
 }
 @media only screen and (min-width: 769px) {
-  .container-projects{
+  /* clases toggle btn    */
+
+  .label-darkmode {
+    width: 70px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 40px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.2),
+      inset 0px -5px 15px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+
+  .label-darkmode::after{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .checkbox{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .checkbox:checked + .label-darkmode::after{
+    background: black;
+  }
+
+  .checkbox:checked + .label-darkmode{
+    background: #45454b;
+  }
+
+  .checkbox:checked + .label-darkmode::after{
+    left: calc(100% - 8px);
+    transform: translateX(-100%);
+  }
+
+  .label-darkmode, .label-darkmode::after{
+    transition: 0.3s;
+  }
+
+  .label-darkmode:active::after{
+    width: 55px;
+  }
+
+  .label-darkmode svg{
+    position: absolute;
+    width: 22px;
+    top: 7px;
+    z-index: 100;
+  }
+
+  .label-darkmode svg.sun{
+    left: 4px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+  }
+
+  .label-darkmode svg.moon{
+    left: 40px;
+    fill: transparent;
+    transition: 0.3s;
+  }
+
+  .checkbox:checked + .label-darkmode svg.sun{
+    fill: transparent;
+    
+  }
+
+  .checkbox:checked + .label-darkmode svg.moon{
+    fill: #ffffff;
+  }
+
+  .container-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -302,17 +382,18 @@ body {
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 40px;
   }
 
-  .container-card{
-    display:block;
+  .container-card {
+    display: block;
     width: 420px;
     height: 180px;
     box-shadow: 0px 0px 2px 0px #cacace;
     border-radius: 1rem;
   }
 
-  .title{
+  .title {
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
@@ -320,7 +401,7 @@ body {
     color: rgb(56, 56, 56);
   }
 
-  .description{
+  .description {
     font-size: 14px;
     margin-top: 10px;
     margin-left: 5px;
@@ -329,7 +410,7 @@ body {
     color: gray;
   }
 
-  .technologies{
+  .technologies {
     font-size: 14px;
     margin-top: 10px;
     margin-left: 5px;
@@ -338,15 +419,15 @@ body {
     color: gray;
   }
 
-  .container-buttons{
+  .container-buttons {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     width: 100px;
     margin-left: -10px;
   }
-  
-  .btn-card{
+
+  .btn-card {
     color: rgb(97, 91, 91);
     border: none;
     border-radius: 25px;
@@ -359,17 +440,15 @@ body {
     transform: all 0.3s ease-in-out;
   }
 
-  .btn-card .icon-card{
+  .btn-card .icon-card {
     color: rgb(97, 91, 91);
     margin-left: -6px;
   }
 
-  .btn-card:hover .icon-card{
+  .btn-card:hover .icon-card {
     color: #000000;
     transform: all 0.3s ease-in-out;
   }
-
-
 
   .container-text-home {
     display: block;
@@ -392,7 +471,7 @@ body {
     height: 90vh;
   }
 
-  .text-title-home{
+  .text-title-home {
     color: #2c2847;
     font-weight: bold;
     font-size: 50px;
@@ -421,7 +500,7 @@ body {
     margin-top: 3px;
     width: 100px;
   }
-  
+
   .btn-navbar-contact:hover {
     background-color: var(--color-primary);
     color: #fff;
@@ -434,18 +513,75 @@ body {
     text-align: left;
   }
 
+  .item-navbar-hover {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(117, 117, 117) !important;
+  }
+
+  .item-navbar-hover:hover {
+    color: black !important;
+  }
+
+  .nav-item-widh-night-mode {
+    text-align: center;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    text-align: left;
+  }
+
+  .nav-item-widh-night-mode-toggle {
+    text-align: center;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    text-align: left;
+  }
+
+  .separator-navbar {
+    font-weight: 50;
+    margin-top: -2px;
+    font-size: 18px;
+    color: rgb(182, 180, 180);
+  }
+
+  .contact-navbar {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(117, 117, 117);
+  }
+
+  .icon-navbar-contact {
+    margin-right: 5px;
+  }
+
+  .icon-navbar-contact:hover {
+    color: black;
+  }
+
+  .icon-language {
+    margin-top: -2px;
+    color: rgb(117, 117, 117);
+  }
+
   .nav-link {
     color: black;
   }
 
-  .container-cards{
+  .container-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5%;
   }
 
-  .card-service{
+  .card-service {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -456,57 +592,56 @@ body {
     color: black;
   }
 
-  .icon-card{
+  .icon-card {
     color: #784cfb;
     transition: all 0.5s ease-in-out;
     margin-top: 10%;
-
   }
 
-  .card-service:hover{
+  .card-service:hover {
     transition: all 0.5s ease-in-out;
     background-color: #784cfb;
     box-shadow: rgba(255, 255, 255, 0.5);
     color: white;
   }
 
-  .card-service:hover .icon-card{
+  .card-service:hover .icon-card {
     transition: all 0.5s ease-in-out;
 
     color: white;
   }
 
-  .card-1{
+  .card-1 {
     margin-left: 51%;
   }
-  .card-3{
+  .card-3 {
     margin-left: -15%;
   }
 
-  .card-1, .card-2, .card-3{
+  .card-1,
+  .card-2,
+  .card-3 {
     margin-top: 5%;
   }
 
-  .title-card{
+  .title-card {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 8%;
   }
 
-  .paragraph-card{
+  .paragraph-card {
     text-align: center;
   }
 
-  .title-services{
+  .title-services {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
   }
 
-  .paragraph-services{
+  .paragraph-services {
     text-align: center;
     margin-top: 1%;
   }
-
-  
 }

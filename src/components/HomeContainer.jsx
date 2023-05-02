@@ -12,7 +12,7 @@ export const HomeContainer = () => {
           </div>
           <div className="row mt-3 text-p-home">
             <p>
-              Hello, I´ am a systems engineer and web developer, I have
+              Hello👋, I´ am a systems engineer and web developer, I have
               experience in front-end development, I am passionate about
               technology and programming, I am always learning new things and I
               am always looking for new challenges.

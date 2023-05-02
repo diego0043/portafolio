@@ -4,10 +4,6 @@ export const ServiceContainer = () => {
       <div className="container-fluid container-services">
         <div className="row" data-aos="fade-up" data-aos-duration="500">
           <span className="title-services">Specializing in</span>
-          <span className="paragraph-services pe-2 ps-2">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br /> Sed
-            numquam minima.
-          </span>
         </div>
         <div className="row container-cards">
           <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">

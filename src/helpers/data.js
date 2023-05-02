@@ -63,4 +63,20 @@ export const data = [
     technologies: "React, Bootstrap, sha250",
     urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
   },
+  {
+    id: 9,
+    title: "Calculator",
+    type: "Mobile App",
+    description: "Basic calculator",
+    technologies: "Kotlin, Android Studio",
+    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+  },
+  {
+    id: 10,
+    title: "CRUD Example",
+    type: "Mobile App",
+    description: "CRUD Example in Android Studio",
+    technologies: "Kotlin, Android Studio, SQLite",
+    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+  },
 ];
