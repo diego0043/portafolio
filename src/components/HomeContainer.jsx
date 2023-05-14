@@ -28,7 +28,7 @@ export const HomeContainer = () => {
           <div className="row">
             <div className="col-4">
               <a href={cv} download>
-                <button className="btn-home-description shadow">
+                <button className="btn-home-description">
                   Download CV
                 </button>
               </a>
