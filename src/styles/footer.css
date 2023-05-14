@@ -1,0 +1,112 @@
+/* Vista mobile */
+@media screen and (max-widht: 768px) {
+}
+
+/* Vista pc */
+@media screen and (min-width: 768px) {
+  .container-footer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .row-1 {
+    position: absolute;
+    top: 0;
+    height: 45vh;
+    width: 100%;
+    background-color: white;
+    margin-top: 33px;
+  }
+
+  .row-2 {
+    position: absolute;
+    top: 0;
+    height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: white;
+    z-index: 100;
+    margin-top: 100px;
+    border-radius: 0px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row-3 {
+    position: absolute;
+    bottom: 0;
+    height: 45vh;
+    width: 100%;
+    background-color: var(--color-primary);
+  }
+
+  .form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);  }
+
+  .form .title {
+    color: royalblue;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .row-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 90vw;
+  }
+}

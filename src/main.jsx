@@ -9,6 +9,7 @@ import "../src/styles/home.css";
 import "../src/styles/service.css";
 import "../src/styles/projects.css";
 import "../src/styles/navbar.css";
+import "../src/styles/footer.css"
 import 'animate.css';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
