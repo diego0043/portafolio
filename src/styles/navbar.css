@@ -187,6 +187,9 @@
 
 /* vista pc */
 @media screen and (min-width: 768px) {
+  .navbar {
+    z-index: 1000 !important;
+  }
   .navbar-brand-movil {
     width: 80%;
     text-align: center;

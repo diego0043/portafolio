@@ -1,13 +1,13 @@
 import React from "react";
+import { ContactComponent } from "./ContactComponent";
 
 export const FooterContainer = () => {
   return (
     <>
-      <div className="container container-footer">
-        <div className="row row-1"></div>
+      <div className="container-fluid container-footer">
         <div className="row row-2">
-          <div className="col-6"></div>
-          <div className="col-6">
+          <div className="col-7"></div>
+          <div className="col-5">
             <form class="form">
               <div class="title">Contact us</div>
               <input type="text" placeholder="Your email" class="input" />
@@ -16,9 +16,10 @@ export const FooterContainer = () => {
             </form>
           </div>
         </div>
-        <div className="row row-3"></div>
       </div>
-      <div className="row-4">contact</div>
+      <div className="row-4">
+        <ContactComponent />
+      </div>
     </>
   );
 };
