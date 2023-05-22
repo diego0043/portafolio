@@ -6,6 +6,7 @@ export const data = [
     description: "Voting App",
     technologies: "Quasar, Vuetify, Firebase, Vue, Capacitor",
     urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    demo: true,
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ export const data = [
     type: "Web App",
     description: "Electricity company website",
     technologies: "React, Vue3-Carousel, Bootstrap, Animate.css",
-    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    urls: ["https://github.com/diego0043/dielecpro", "https://dielecpro-development.netlify.app/"],
+    demo: true,
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ export const data = [
     type: "Web App",
     description: "All about countries",
     technologies: "Vue 3, Ant Desing, Lotiefiles, Axios",
-    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    urls: ["https://github.com/diego0043/prueba-tecnica", "https://prueba-diegovalencia.netlify.app/"],
+    demo: true,
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ export const data = [
     type: "Web App",
     description: "All about heroes",
     technologies: "React, Axios, Animate.css, Lotiefiles",
-    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    urls: ["https://github.com/diego0043/heroes-spa", "https://heroes-app-diego.netlify.app/"],
+    demo: true,
   },
   {
     id: 5,
@@ -37,7 +41,8 @@ export const data = [
     type: "Web App",
     description: "Game Tic Tac Toe",
     technologies: "React, Bootstrap",
-    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    urls: ["https://github.com/diego0043/tres-en-raya", "https://tic-tac-toe-game-diego.netlify.app/"],
+    demo: true,
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const data = [
     description: "Balance sheet, income statements and more",
     technologies: "Vue 3, Firebase, Bootstrap, Lotiefiles",
     urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    demo: true,
   },
   {
     id: 7,
@@ -53,7 +59,8 @@ export const data = [
     type: "Web App",
     description: "Product creation and real-time update",
     technologies: "Vue 2, Firebase, Firestore, Vuefire, Bootstrap",
-    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    urls: ["https://github.com/diego0043/cli-store", "https://appwebstore.netlify.app/"],
+    demo: true,
   },
   {
     id: 8,
@@ -61,7 +68,8 @@ export const data = [
     type: "Web App",
     description: "Block creation using sha250 technology",
     technologies: "React, Bootstrap, sha250",
-    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    urls: ["https://github.com/diego0043/practice-blockchain", "https://practice-blockchain.netlify.app/"],
+    demo: true,
   },
   {
     id: 9,
@@ -69,7 +77,8 @@ export const data = [
     type: "Mobile App",
     description: "Basic calculator",
     technologies: "Kotlin, Android Studio",
-    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    urls: ["https://github.com/diego0043/Calculator", "N/A"],
+    demo: false,
   },
   {
     id: 10,
@@ -77,6 +86,7 @@ export const data = [
     type: "Mobile App",
     description: "CRUD Example in Android Studio",
     technologies: "Kotlin, Android Studio, SQLite",
-    urls: ["https://github.com/diseno2022/seus.git", "https://seusapp.org/"],
+    urls: ["https://github.com/diego0043/Crud_SQlite", "N/A"],
+    demo: false,
   },
 ];

@@ -76,6 +76,10 @@
     color: #000000;
     transform: all 0.3s ease-in-out;
   }
+
+  .margin-helper{
+    width: 30px;
+  }
 }
 
 /* vista pc */
@@ -154,5 +158,9 @@
   .btn-card:hover .icon-card {
     color: #000000;
     transform: all 0.3s ease-in-out;
+  }
+
+  .margin-helper{
+    width: 30px;
   }
 }
