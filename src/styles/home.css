@@ -17,8 +17,8 @@
 
   .img-home {
     display: block;
-    margin-top: 5%;
-    width: 400px;
+    margin-top: 25%;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -26,24 +26,111 @@
   .text-title-home {
     color: #2c2847;
     font-weight: bold;
-    font-size: 50px;
-    margin-top: 10px;
+    font-size: 75px;
+    margin-top: 50px;
+    margin-left: 50%;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .content .text-title-home {
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .content .text-title-home:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--color-primary);
+  }
+
+  .content .text-title-home:nth-child(2) {
+    color: var(--color-primary);
+    animation: animate 4s ease-in-out infinite;
+  }
+
+  .content-2 {
+    margin-top: 90px;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
   }
 
   .btn-home-description {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: var(--color-primary);
+    z-index: 1;
+    background: white;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    width: 200px;
+    overflow: hidden;
+  }
+
+  .btn-home-description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
     background-color: var(--color-primary);
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    padding: 7px 15px;
-    font-weight: bold;
-    font-size: 15px;
-    margin-top: 10px;
-    width: 170px;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+  }
+
+  .btn-home-description:hover {
+    color: white;
+  }
+
+  .btn-home-description:hover::before {
+    width: 200px;
   }
 
   .text-p-home {
+    margin-top: 30px;
     color: gray;
     text-align: justify;
   }
